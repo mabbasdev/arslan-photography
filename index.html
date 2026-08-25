@@ -1150,6 +1150,26 @@
         </div>
     </div>
 
+    <div id="videoDialog"
+        class="dialog hidden fixed z-9999 left-0 top-0 size-full overflow-auto bg-black/80 items-center justify-center">
+        <div class="dialog-content m-auto p-12.5 rounded-lg w-[80%] max-w-300 relative">
+            <span id="closeBtn"
+                class="close absolute top-0 right-0 text-white/80 text-2xxl font-bold cursor-pointer size-10">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div id="videoContainer"></div>
+        </div>
+    </div>
+
+    <button id="scrollProgress" title="Scroll to top"
+        class="fixed z-1 right-5 bottom-5 size-10 rounded-full bg-secondary shadow-shadow-card cursor-pointer opacity-0 pointer-events-none duration-500 flex items-center justify-center">
+        <span class="icon text-xs relative z-1"><i class="fa-solid fa-chevron-up text-primary"></i></span>
+        <svg class="absolute top-0 left-0 -rotate-90" width="40" height="40">
+            <circle cx="20" cy="20" r="17" stroke="var(--primary)" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-dasharray="100.53" stroke-dashoffset="100.53"></circle>
+        </svg>
+    </button>
+
     <script src="assets/vendor/gsap/gsap.min.js"></script>
     <!-- Replace local broken script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
